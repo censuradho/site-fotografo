@@ -1,0 +1,163 @@
+@import './Header.css';
+@import './footer.css';
+
+
+[data-animate] {
+  opacity: 0;
+  transform: translateY(50px);
+}
+#start  {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #eee;
+  padding: 20px;
+}
+#start path {
+  fill: #262626
+}
+
+#start h2 {
+  max-width: 300px;
+}
+
+#start svg {
+  position: relative;
+}
+
+aside svg::before {
+  content: '';
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 10px;
+  background-color: #262626;
+}
+
+#start aside {
+  width: 150px;  
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.start-header {
+  width: max-content;;
+}
+
+
+#start button {
+  width: 120px;
+  height: 40px;
+  padding: 5px;
+  margin-top: 10px;
+  border: 1px solid #262626;
+  color: #262626;
+  border-radius: 25px;
+  transition: .3s
+}
+#start button:hover {
+  background: #262626;
+  color: #fff;
+}
+
+@media screen and (min-width: 800px) {
+  
+  #start aside {
+    float: right;
+  }
+}
+.galery {
+  position: relative;
+  justify-content: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.galery h3, .galery p, .galery a {
+  color: #fff;
+}
+.galery a.underline::after, 
+.galery a.underline:hover::after {
+  background: #fff;
+}
+.galery h3::before {
+  background: #fff;
+}
+.galery button {
+  background: #262626;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px ;
+}
+.galery-content {
+  position: absolute;
+  left: 10%;
+  z-index: 5;
+}
+.images {
+  position: absolute;
+  top: 0;
+}
+
+.galery .image-one {
+  background: url(../img/photographer-1149214_1920.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.galery .image-three {
+  background: url(../img/men-2425121_1920.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
+.galery .image-four {
+  background: url(../img/people-4468350_1920.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
+hr {
+  margin: 100px 0;
+}
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  margin: 50px auto;
+}
+
+#about div:nth-child(2) {
+  width: 100%;
+  height: 300px;
+  background: url(../img/photographer-1867417_1920.jpg) center;
+  background-size: cover;
+  margin-top: 50px;
+}
+
+
+@media screen and (min-width: 800px) {
+  #about {
+    flex-direction: row;
+  }
+  #about div:nth-child(1) {
+    width: 60%;
+    padding-right: 50px;
+  }
+  #about div:nth-child(2) {
+    width: 100%;
+    height: 500px;
+    max-width: 40%;
+    max-height: 100%;
+    margin: 0;
+  }
+}
+
+

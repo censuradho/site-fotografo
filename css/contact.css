@@ -1,0 +1,82 @@
+@import './Header.css';
+@import './footer.css';
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 70px 20px 0 20px;
+}
+
+form {
+  width: 100%;
+  max-width: 500px;
+}
+
+.row {
+  position: relative;
+  margin: 30px 0;
+}
+
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #363636;
+  padding: 5px 10px;
+  box-shadow: none;
+  outline: none;
+}
+input:focus {
+  border-color: #ccc ;
+}
+input:focus + label {
+  color: #ccc ;
+}
+input:focus + label, input.notEmpty + label {
+  transform: translateY(-20px);
+  font-size: 1rem;
+}
+input:invalid.notEmpty {
+  border-color: tomato;
+} 
+input:invalid.notEmpty  + label {
+  color: tomato;
+} 
+input:valid.notEmpty {
+  border-color: rgb(61, 180, 61);
+} 
+input:valid.notEmpty + label {
+  color: rgb(61, 180, 61);
+}
+
+
+label {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  transition: .3s ease-out;
+  font-size: .8rem;
+}
+
+select {
+  width: 100%;
+  font-weight: bold;
+  text-transform: capitalize;;
+  padding: 10px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 50px;
+  background: #363636;
+  color: #fff;
+  border-radius: 3px;
+  transition: .3s ease-out;
+  overflow: hidden;
+  opacity: 0;
+}
+form button:hover {
+  background: #262626;
+}
