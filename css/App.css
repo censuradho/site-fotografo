@@ -58,6 +58,9 @@ aside svg::before {
 }
 #start button:hover {
   background: #262626;
+}
+
+#start button:hover a {
   color: #fff;
 }
 

@@ -1,0 +1,59 @@
+@import './Header.css';
+@import './footer.css';
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 50px 0;
+  background: #262626;
+}
+.header {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  align-items: center;
+}
+h2 {
+  color: #fff;
+}
+
+section path {
+  fill: #fff;
+}
+.gallery {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px 5px ;
+}
+.column {
+  flex: 45%;
+  max-width: 45%;
+}
+.column:last-child {
+  flex: 100%;
+  max-width: 100%;
+}
+.column img {
+  width: 100%;
+  margin: 5px 0;
+  vertical-align: middle;
+  filter: grayscale(1);
+  opacity: .7;
+  transition: .3s ease-in-out;
+}
+.column img:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+@media screen and (min-width: 800px) {
+  .column, .column:last-child {
+    flex: 25%;
+    max-width: 25%;
+  }
+}

@@ -50,7 +50,7 @@ tlImages
 
     tl.to(element, 1, {autoAlpha: 1, y: 0})
 
-    if(window.pageYOffset + 600 >= element.offsetTop) {
+    if(window.pageYOffset + 400 >= element.offsetTop) {
       tl.play()
     } 
   }
