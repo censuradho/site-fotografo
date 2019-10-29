@@ -6,7 +6,7 @@ tl
   .from('nav', .5, { y: '-100%', ease: Power1.easeOut })
   .to('.rect1', .5, { rotation: -45, y: 5})
   .to('.rect2', .5, { rotation: 45 })
-  .staggerTo('header ul li', .5, { opacity: .7,x: 0, ease: Power1.easeInOut } , .5)
+  .staggerFrom('header ul li', .5, { opacity: 0, x: -50, ease: Power1.easeInOut } , .5)
 tl.reverse()
 
 document.querySelector('header button')
